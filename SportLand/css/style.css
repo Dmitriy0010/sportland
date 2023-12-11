@@ -1,0 +1,651 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+select {
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 300;
+  background-color: #12191e;
+
+}
+
+header {
+  background-color: #12191e;
+}
+
+.container {
+  max-width: 1190px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.header_top-inner {
+  background-color: #12191e;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_img {
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+}
+
+.menu_list {
+  display: flex;
+}
+
+.menu-list-item {
+  margin-left: 32px;
+}
+
+.menu_list-link {
+  font-family: 'Outfit', sans-serif;
+  padding: 0 9px 9px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: aqua;
+  letter-spacing: 0.6px;
+  transition: all .9s;
+}
+
+.menu_list-link:hover:hover {
+  border-bottom: 1px solid aqua;
+
+}
+
+.header_content {
+  background-image: url('../images/d4e10f0c1ee70cae044fd88a10318d0d.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 650px;
+
+}
+
+.header_content-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 93px);
+}
+
+.header_title {
+  font-family: 'Outfit', sans-serif;
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 40px;
+  color: aqua;
+  margin-bottom: 75px;
+}
+
+.heaer_subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 20px;
+  color: aqua;
+  letter-spacing: 2.74362px;
+  margin-top: 10px;
+}
+
+.about {
+  background-color: #12191e;
+  padding: 110px 0 25px;
+
+}
+
+.about_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-style: italic;
+  max-width: 602px;
+  font-size: 60px;
+  line-height: 75px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  color: aqua;
+  padding-bottom: 18px;
+  position: relative;
+  align-self: flex-start;
+}
+
+.title::after {
+  content: " ";
+  position: absolute;
+  width: 60px;
+  height: 4px;
+  background-color: aqua;
+  bottom: 0;
+  left: 0;
+}
+
+.about_text p {
+  max-width: 770px;
+  margin-bottom: 16px;
+  color: aqua;
+}
+
+.portfolio {
+  margin: 140px 0 165px;
+
+}
+
+.portfolio_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 100px;
+}
+
+.portfolio_filter {
+  margin-right: 2%;
+}
+
+.portfolio_btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: aqua;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 0px 4px 5px;
+  margin-right: 25px;
+}
+
+.portfolio_content {
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.portfolio_item {
+  margin-bottom: 20px;
+}
+
+.potfolio_item-img {
+  width: 100%;
+}
+
+.portfolio_add {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: aqua;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 42px 15px 41px;
+  margin-bottom: 130px;
+}
+
+.blockquote {
+  max-width: 650px;
+  margin: 0 auto 25px;
+  text-align: center;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: aqua;
+}
+
+.blockquote_author {
+  max-width: 650px;
+  margin: 0 auto 100px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: aqua;
+}
+
+.potfolio_video {
+
+  background-image: url(../images/abstract-blur-and-defocused-fitness-equipment-in-gym-interior-blurred-photo-background.jpg);
+  height: 324px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.video_icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio_numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio_numbers-item {
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 73px;
+  color: aqua;
+  margin-bottom: 9px;
+}
+
+.portfolio_numbers-item span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  display: block;
+}
+
+.connection {
+  padding: 145px 0 160px;
+  background-image: url('../images/Map.jpg');
+  background-repeat: no-repeat;
+  background-size: 45%;
+  background-position: right 80%;
+}
+
+.connection_title {
+  margin-bottom: 80px;
+}
+
+.form {
+  max-width: 570px;
+  background-color: none;
+}
+
+.form input,
+.form textarea {
+  border: none;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid aqua;
+  padding: 16px 0;
+  margin-bottom: 16px;
+  font-size: 16px;
+
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.7px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
+
+}
+
+.form_btn {
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+  color: black;
+  text-transform: uppercase;
+  padding: 17px 70px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  letter-spacing: 2px;
+
+}
+
+
+.clubs-title{
+  color: aqua;
+  text-decoration: none;
+  border: none;
+  
+}
+
+.footer {
+  background-color: #12191e;
+  margin-top: 150px;
+}
+
+hr {
+  border: none;
+  /* Убираем границу для браузера Firefox */
+  color: aqua;
+  /* Цвет линии для остальных браузеров */
+  background-color: aqua;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 2px;
+  /* Толщина линии */
+}
+
+.container_menu-footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #12191e;
+
+}
+
+.info {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: aqua;
+}
+
+.logo_img-footer {
+  height: 140px;
+  width: 140px;
+}
+
+
+.container_menu-footer {
+  padding: 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aqua;
+}
+
+.menu_list-link2 {
+  font-family: 'Outfit', sans-serif;
+  padding: 0 9px 9px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: aqua;
+  letter-spacing: 0.6px;
+  transition: all .9s;
+}
+
+.menu_list-link2:hover:hover {
+  border-bottom: 1px solid aqua;
+}
+
+.nomber {
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  color: aqua;
+  margin-top: 100px;
+}
+
+.coach {
+  color: aqua;
+}
+
+.trener {
+  font-family: 'Dancing Script', cursive;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.coach_items {
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.coach_item img {
+  margin-bottom: 10px;
+}
+
+.coach_name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: aqua;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.coach_pos {
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+
+.coach {
+  margin-bottom: 40px;
+}
+.slider-blog_item{
+  padding: 190px 0;
+}
+
+.slider-blog_item-img1 {
+  position: relative;
+  background-image: url(../images/usl/kid1.jpg);
+  width: 100%;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-blog_item-img2 {
+  position: relative;
+  background-image: url(../images/usl/slider1.jpg);
+  width: 100%;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-blog_item-img3 {
+  position: relative;
+  background-image: url(../images/usl/slider2.jpg);
+  width: 100%;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-blog_item-img4 {
+  position: relative;
+  background-image: url(../images/usl/slider3.jpg);
+  width: 100%;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-blog_item-img5 {
+  position: relative;
+  background-image: url(../images/usl/slider4.jpg);
+  width: 100%;
+  height: 524px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+.slider-blog_item-link {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: aqua;
+  padding: 10px;
+  margin: 10px;
+  max-width: 700px;
+  text-decoration: none;
+}
+
+
+.slider-blog_item-text {
+  max-width: 650px;
+
+}
+
+.slick-dots{
+  display: flex;
+}
+
+.slick-dots li + li {
+  margin-left: 13px;
+}
+
+.slick-dots .slick-active button{
+  opacity: 1;
+  width: 10px;
+  height: 10px;
+}
+
+/* .slick-prev, .slick-next{
+  border: none;
+  background-color: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+left: -9px;
+}
+
+
+.slick-next{
+  right: 9px;
+} */
+
+
+.slick-dots button{
+  background-color: aqua;
+  opacity: 0.4;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  font-size: 0;
+  padding: 0;
+  border: none;
+
+}
+
+.card-items {
+  column-gap: 2;
+  column-gap: 20px;
+}
+
+.card_item img {
+  max-width: 100px;
+}
+
+
+.card_pos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: aqua;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+#person{
+ width: 100%;
+ font-size: 40px;
+}
+
+#pers{
+  margin-top: 50px;
+}
+
+.about_pers{
+color: aqua;
+}
